@@ -1,2 +1,2 @@
 # Projeto-Learnhub
-Sistema no ramo educacional utilizado para gerenciamento de monitorias da universidade, em JS, HTMl, PHP, CSS.
+System of the educational area used for monitoring management of a university, in JavaScript, HTMl, PHP, CSS.
