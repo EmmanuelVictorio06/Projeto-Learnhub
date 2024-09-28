@@ -1,0 +1,578 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #333;
+}
+
+header {
+    width: 100%;
+    background-color: black; /* Altere a cor de fundo conforme necessário */
+    display: flex;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    
+}
+
+.cabecalho img {
+    height: 150px; /* Ajuste a altura conforme necessário */
+}
+
+header a {
+    color: greenyellow;
+    text-decoration: none; 
+}
+
+.cabecalho h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    color: greenyellow;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid greenyellow;
+}
+
+.cabecalho h1:hover {
+    text-decoration: underline;
+    transition: 2s; /* NÃO TÁ FUNCIONANDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
+
+
+}
+
+
+
+.container-inf{
+    text-align: center;
+}
+
+
+.inform {
+    border: solid 2px greenyellow;
+    display: inline-block;
+    padding: 10px; /* Adicione padding para espaçamento interno */
+    margin: 30px auto; /* Define margens automáticas para centralização horizontal */
+    font-size: 24px;
+    color: greenyellow;
+}
+
+.container-main {
+    display: flex; /* Faz com que os containers fiquem em linha */
+    justify-content: center; /* Centraliza os containers horizontalmente */
+}
+
+.container-my-quests,
+.container-last-quests,
+.container-my-monitoring
+{
+    width: 40%;
+    border: solid 2px greenyellow;
+    padding: 30px;
+    margin: 10px; /* Adiciona margem entre os containers */
+    margin-bottom: 30px;
+}
+
+.container-my-quests:hover,
+.container-last-quests:hover,
+.container-my-monitoring:hover,
+.container-subjects:hover
+{
+
+    box-shadow: 2px 4px 8px greenyellow;
+
+}
+
+.container-my-quests {
+    margin-right: 5px; /* Define uma margem à direita para separar os containers */
+}
+
+.container-last-quests {
+    margin-left: 5px; /* Define uma margem à esquerda para separar os containers */
+}
+
+footer{
+    text-align: center;
+    padding: 10px; /* Adicione padding para espaçamento interno */
+    font-size: 20px;
+    color: greenyellow;
+}
+
+/* Estilo para as seções de perguntas */
+.my-quests,
+.last-quests {
+    margin-bottom: 30px; /* Espaçamento entre as seções */
+}
+
+/* Estilo para o título das seções */
+.my-quests h1,
+.last-quests h1,
+.container-subjects h1,
+.monitors h1
+{
+    text-align: center; /* Centraliza o título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    color: greenyellow;
+}
+
+.quest {
+    border: 2px solid #333; /* Borda das perguntas */
+    border-radius: 5px;
+    padding: 15px; /* Espaçamento interno das perguntas */
+    margin-bottom: 20px; /* Espaçamento entre as perguntas */
+    background-color: #232323; /* Cor de fundo das perguntas */
+    display: grid; /* Usando layout de grade para posicionar os itens */
+    grid-template-columns: auto; /* Apenas uma coluna */
+    grid-row-gap: 10px; /* Espaçamento entre as linhas */
+    color:white;
+    box-shadow: 4px 8px 8px black;
+}
+
+.quest:hover{
+
+    box-shadow: 4px 6px 8px greenyellow;
+    border-color: greenyellow;
+}
+
+.quest-item, .monitoring-item {
+    display: flex; /* Para alinhar os itens verticalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.quest-label {
+    font-weight: bold;
+    margin-right: 5px; /* Espaçamento entre o rótulo e o valor */
+    color: greenyellow; /* Cor do rótulo */
+}
+
+
+
+.border{
+
+    border: double 5px  black;
+}
+
+#questionForm{
+    color: greenyellow;
+    margin: 10px 0px 30px 20px;
+    border: 2px solid greenyellow;
+    padding:20px;
+    width:41.2%;
+    background-color: black;
+    box-shadow: 4px 6px 8px greenyellow;
+}
+
+#questionForm legend{
+    font-size:24px;
+    margin-bottom: 10px;
+}
+#newQuestionForm label {
+    font-size: 24px; /* Mesmo tamanho de fonte do legend */
+    color: greenyellow; /* Cor do texto */
+
+}
+
+
+#questionForm select{
+    font-size:16px;
+    margin-top: 10px;
+    color:greenyellow;
+    background-color: black;
+    padding:5px;
+    width:60%;
+    border-color: greenyellow;
+}
+
+#newQuestionForm fieldset{
+    margin-bottom:30px;
+    width:80%;
+}
+
+#questionForm textarea {
+    resize: none; /* Impede que o usuário redimensione o textarea */
+    width: 80%; /* Define a largura fixa do textarea */
+    height: 100px; /* Define a altura fixa do textarea */
+    background-color: greenyellow;
+    margin-top: 20px;
+}
+
+#questionForm input{
+    display: block; /* Para ocupar toda a largura do contêiner */
+    margin: 10px auto; /* Isso centralizará o botão horizontalmente */
+    background-color: grey;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 30%; /* Define a largura do botão */
+}
+
+#questionForm input:hover{
+    background-color: greenyellow;
+    box-shadow: 2px 4px 8px greenyellow;
+    border-color: greenyellow;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.new-quest {
+    display: flex; /* Para permitir o alinhamento dos elementos */
+    align-items: center;
+    justify-content: center;
+    margin: auto auto auto auto;
+}
+
+#questionForm input {
+    display: block; /* Manter como block para ocupar toda a largura do contêiner */
+    margin: 10px auto; /* Centralizar o botão horizontalmente */
+    background-color: grey;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 40%; /* Definir a largura do botão para 40% */
+    max-width: 200px; /* Adicionar uma largura máxima para o caso de a largura da div ser muito grande */
+}
+
+#questionForm select{
+    margin-bottom:30px;
+}
+
+#questionForm h1{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#questionForm label{
+    font-size: 24px; /* Mesmo tamanho de fonte do legend */
+    color: greenyellow; /* Cor do texto */
+    margin-top: 15px;
+
+}
+
+.new-quest-container{
+    display: flex; /* Para permitir o alinhamento dos elementos */
+
+}
+
+#create-new-quest{
+    display: block; /* Manter como block para ocupar toda a largura do contêiner */
+    margin: 10px auto 10px 25px; /* Centralizar o botão horizontalmente */
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: greenyellow;
+    
+}
+
+#create-new-quest:hover{
+    background-color: greenyellow;
+    box-shadow: 2px 4px 8px greenyellow;
+    border-color: greenyellow;
+    text-transform: uppercase;
+    color: black;
+    transition: 0.2s;
+    
+}
+
+
+
+
+
+/*  --------------------------------------------- CSS PERGUNTAS ---------------------------------------------------------------------*/
+
+.container-search{
+    text-align: center;
+}
+
+.search input{
+    border: solid 2px black;
+    padding: 10px; /* Adicione padding para espaçamento interno */
+    background-color: greenyellow;
+    color: black;
+    margin: 30px 0 30px 0;
+    width:50%;
+
+}
+
+.search button{
+    border: solid 2px black;
+    padding: 10px; /* Adicione padding para espaçamento interno */
+    background-color: greenyellow;
+    color: black;
+    margin: 30px 0 30px 0;
+    width:10%;
+
+}
+.container-subjects {
+    margin-left: 5px; /* Define uma margem à esquerda para separar os containers */
+}
+.subjects h1{
+    text-align: center; /* Centraliza o título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    color: greenyellow;
+    
+}
+
+.subject{
+    border: 2px solid #333; /* Borda das perguntas */
+    border-radius: 5px;
+    padding: 15px; /* Espaçamento interno das perguntas */
+    margin-bottom: 10px; /* Espaçamento entre as perguntas */
+    background-color: #232323; /* Cor de fundo das perguntas */
+    display: grid; /* Usando layout de grade para posicionar os itens */
+    grid-template-columns: auto; /* Apenas uma coluna */
+    grid-row-gap: 10px; /* Espaçamento entre as linhas */
+    color:white;
+    box-shadow: 2px 4px 8px black;
+
+}
+
+.subject:hover{
+    box-shadow: 4px 6px 8px greenyellow;
+    border-color: greenyellow;
+
+}
+
+ul.subjects-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+}
+
+li.subject {
+    width: calc(22%); /* Calcula o tamanho */
+    margin: 10px; /* Adiciona margem entre os elementos */
+    justify-content: center;
+}
+
+.container-subjects{
+
+    width: 40%;
+    border: solid 2px greenyellow;
+    padding: 30px;
+    margin: 10px; /* Adiciona margem entre os containers */
+    margin-bottom: 30px;
+}
+
+.new-quest button{
+    display:inline-block;
+    width:20%;
+    margin: 10px 0 20px 80px;
+    border: solid 2px greenyellow;
+    padding: 30px;
+    background-color: black;
+    color:greenyellow;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 3px 4px greenyellow;
+
+}
+
+.new-quest button:hover{
+    border: solid 2px black;
+    box-shadow: 12px 18px 20px black;
+    background-color: greenyellow;
+    color:black;
+    transition: 0.2s;
+
+}
+
+
+
+/*  --------------------------------------------- CSS SOBRE MONITORIAS ---------------------------------------------------------------------*/
+
+
+
+.monitoring {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    border: 2px solid #333; /* Borda das perguntas */
+    border-radius: 5px;
+    padding: 15px; /* Espaçamento interno das perguntas */
+    margin-bottom: 20px; /* Espaçamento entre as perguntas */
+    background-color: #232323; /* Cor de fundo das perguntas */
+    grid-row-gap: 10px; /* Espaçamento entre as linhas */
+    color:white;
+    box-shadow: 4px 8px 8px black;
+}
+
+
+/* Defina a largura das outras divs internas para ocupar o restante do espaço disponível */
+.Monitoring-name,
+.monitor-name,
+.monitoring-hour,
+.monitoring-day,
+.monitoring-meet,
+.monitoring-room {
+    flex-grow: 1;
+}
+
+/* Exemplo de estilo para a imagem */
+.monitor-picture img {
+    width: 100px; /* Defina o tamanho da imagem conforme necessário */
+    height: 100px; /* Defina o tamanho da imagem conforme necessário */
+    border-radius: 50%; /* Torna a imagem circular */
+}
+
+.monitor-picture {
+    margin-right: 20px; /* Espaçamento entre a imagem e as informações */
+}
+
+.monitor-info {
+    flex-grow: 1;
+}
+
+.monitoring-title {
+    color:greenyellow;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.monitoring-label {
+    font-weight: bold;
+    margin-right: 5px; /* Espaçamento entre o rótulo e o valor */
+    color: greenyellow; /* Cor do rótulo */
+}
+.monitor-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Define a direção da flexbox como coluna */
+}
+.monitoring-item{
+    margin-top: 10px;
+}
+.monitoring:hover{
+    box-shadow: 4px 6px 8px greenyellow;
+    border-color: greenyellow;
+
+}
+
+
+
+/*  --------------------------------------------- CSS SOBRE MINHA CONTA ---------------------------------------------------------------------*/
+
+
+.my-account {
+    display: flex;
+    border: 2px solid #333; /* Borda */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #232323;
+    color: white;
+    box-shadow: 4px 8px 8px black;
+}
+
+.image-account {
+    margin-right: 20px; /* Espaçamento entre a imagem e as informações */
+    display: flex;
+    align-items: center;
+}
+
+.image-account img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.account-details {
+    display: flex;
+    flex-direction: column; /* Coloca as informações em coluna */
+}
+
+.account-info {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-bottom: 10px; /* Espaçamento entre os elementos */
+}
+
+.account-label {
+    font-weight: bold;
+    color: greenyellow;
+    margin-right: 10px; /* Adiciona margem à direita para separar o rótulo */
+}
+
+.container-account{
+
+    width: 40%;
+    border: solid 2px greenyellow;
+    padding: 30px;
+    margin: 10px; /* Adiciona margem entre os containers */
+    margin-bottom: 30px;
+}
+
+.container-account:hover{
+    box-shadow: 2px 4px 8px greenyellow;
+}
+
+.container-main-my-account {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+}
+
+.container-account {
+    width: 48%; /* Ambas as divs terão a mesma largura */
+}
+
+.container-account h1{
+    text-align: center; /* Centraliza o título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    color: greenyellow;
+}
+
+.my-account:hover{
+    box-shadow: 4px 6px 8px greenyellow;
+    border-color: greenyellow;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.container-my-quests {
+    text-align: center;
+    padding:30px;
+}
+
+#show-more-btn, #show-more-recent-btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: greenyellow;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 4px 8px 8px black;
+}
+
+.subjects-list .subject-link {
+    color: greenyellow; /* Isso define a cor do texto do link para a cor do texto padrão */
+    text-decoration: none; /* Isso remove o sublinhado padrão dos links */
+}
